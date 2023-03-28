@@ -78,7 +78,6 @@ def photos_upload():
     '''Функция загрузки фотографий на ЯД'''
     selected_photos = date_name_converse()
     folder_name = folder_create('vk_pictures')
-    # pprint(selected_photos)
     with open('tokenyandex.txt', 'r') as f:
         tokenyandex = f.read().strip()
     headers = {'Content-Type': 'application/json', 'Authorization': tokenyandex}
